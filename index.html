@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="icon" href="Imgs & SVGs\raccoon-svgrepo-com.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="sideImgCrt">
+            <img src="Imgs & SVGs\racoonBoy.jpg" alt="Image of a raccoon.">
+            <div class="sideImgTextCrt">
+                <p class="sideImgText&SVG"><img class="sideImgSVG" src="Imgs & SVGs\raccoon-svgrepo-com.svg" alt="Raccoon Icon" width="50">
+                Racoons</p>
+            </div>
+            <p class="sideImgCredit">Image by <a href="https://vk.com/enotimensk">Enot Time</a> on <a href="https://vk.com/">VK</a></p>
+        </div>
+        <div class="mainInput">
+            <div class="topText"><p>This is not a real online service!</p>
+                <p>Would you not like to be a racoon yourself and do nothing but eat trash, be angry and stay cute forever?</p>
+                <p>Well now is your chance! Sign Up below to become a raccoon.</p>
+            </div>
+            <div class="formCrt">
+                <form action="#" method="post">
+                <div class="formInput">
+                    <div>
+                        <label for="first_name">FIRST NAME</label>
+                    </div>
+                    <div>
+                        <input type="text" name="first_name" placeholder="John" required>
+                    </div>
+
+                    <div>
+                        <label for="last_name">LAST NAME</label>
+                    </div>
+                    <div>
+                        <input type="text" id="last_name" name="last_name" placeholder="Doe" required>
+                    </div>
+
+                    <div>
+                        <label for="user_email">Email</label>
+                    </div>
+                    <div>
+                        <input type="email" id="user_email" name="user_email" 
+                        placeholder="someone@email.com" required>
+                    </div>
+
+                    <div>
+                        <label for="phone_number">PHONE NUMBER</label>
+                    </div>
+                    <div>
+                        <input type="tel" name="phone_number" id="phone_number" 
+                        pattern="+1[0-9]{3}[0-9]{3}-[0-9]{4}" value="+1"> 
+                    </div>
+
+                    <div>
+                        <label for="password">PASSWORD</label>
+                    </div>
+                    <div>
+                        <input type="password" name="password" id="password"
+                        minlength="6" placeholder="Password" required>
+                    </div>
+
+                    <div>
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                    </div>
+                    <div>
+                        <input type="password" name="confirm_password" id="confirm_password"
+                        minlength="6" placeholder="Confirm Passowrd" required>
+                    </div>
+                </div>
+                <button class="submitBtn">Create Account</button>
+                </form>
+                <p>Already a raccoon? <a href="">Log in.</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
