@@ -48,7 +48,8 @@
                     id="password"
                     placeholder="Passoword"
                     minlength="6"
-                    required>
+                    required
+                    onkeyup='check();'>
                 </div>
 
                 <div class="col2">
@@ -68,14 +69,15 @@
                     title="Please enter a valid phone number. Example 000-000-0000."
                     required>
 
-                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <label for="confirma_pssword">CONFIRM PASSWORD</label>
                     <input type="password" 
-                    name="confirmPassword" 
-                    id="confirmPassword"
+                    name="confirm_password" 
+                    id="confirm_password"
                     minlength="6"
                     placeholder="Confirm Password"
-                    title="Passwords must match!"
-                    required>
+                    required
+                    onkeyup='check();'>
+                    <span id='message'></span>
                 </div> 
             </div>
             <button class="submitBtn" type="submit">Create Account</button>
