@@ -11,10 +11,10 @@
 <body>
     <div class="main">
         <div class="sideImgCrt">
-            <img src="Imgs & SVGs\racoonBoy.jpg" alt="Image of a raccoon.">
+            <img class="sideImg" src="Imgs & SVGs\racoonBoy.jpg" alt="Image of a raccoon.">
             <div class="sideImgTextCrt">
-                <p class="sideImgText&SVG"><img class="sideImgSVG" src="Imgs & SVGs\raccoon-svgrepo-com.svg" alt="Raccoon Icon" width="50">
-                Racoons</p>
+                <p class="sideImgTextSVG"><img class="sideImgSVG" src="Imgs & SVGs\raccoon-svgrepo-com.svg" alt="Raccoon Icon" width="50">
+                </p><p>Racoons</p>
             </div>
             <p class="sideImgCredit">Image by <a href="https://vk.com/enotimensk">Enot Time</a> on <a href="https://vk.com/">VK</a></p>
         </div>
@@ -23,60 +23,71 @@
                 <p>Would you not like to be a racoon yourself and do nothing but eat trash, be angry and stay cute forever?</p>
                 <p>Well now is your chance! Sign Up below to become a raccoon.</p>
             </div>
-            <div class="formCrt">
-                <form action="#" method="post">
-                <div class="formInput">
-                    <div>
-                        <label for="first_name">FIRST NAME</label>
-                    </div>
-                    <div>
-                        <input type="text" name="first_name" placeholder="John" required>
-                    </div>
 
-                    <div>
-                        <label for="last_name">LAST NAME</label>
-                    </div>
-                    <div>
-                        <input type="text" id="last_name" name="last_name" placeholder="Doe" required>
-                    </div>
+            <form class="theForm" action="" method="post">
+            <caption><h1 class="formTitle">Become Raccoon!</h1></caption>
+            <div class="formInput">
+                <div class="col1">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" 
+                    name="firstName" 
+                    id="firstName"
+                    placeholder="John"
+                    required>
 
-                    <div>
-                        <label for="user_email">Email</label>
-                    </div>
-                    <div>
-                        <input type="email" id="user_email" name="user_email" 
-                        placeholder="someone@email.com" required>
-                    </div>
+                    <label for="uesrEmail">EMAIL</label>
+                    <input type="email" 
+                    name="userEmail" 
+                    id="userEmail"
+                    placeholder="someone@email.com"
+                    required>
 
-                    <div>
-                        <label for="phone_number">PHONE NUMBER</label>
-                    </div>
-                    <div>
-                        <input type="tel" name="phone_number" id="phone_number" 
-                        pattern="+1[0-9]{3}[0-9]{3}-[0-9]{4}" value="+1"> 
-                    </div>
-
-                    <div>
-                        <label for="password">PASSWORD</label>
-                    </div>
-                    <div>
-                        <input type="password" name="password" id="password"
-                        minlength="6" placeholder="Password" required>
-                    </div>
-
-                    <div>
-                        <label for="confirm_password">CONFIRM PASSWORD</label>
-                    </div>
-                    <div>
-                        <input type="password" name="confirm_password" id="confirm_password"
-                        minlength="6" placeholder="Confirm Passowrd" required>
-                    </div>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" 
+                    name="password" 
+                    id="password"
+                    placeholder="Passoword"
+                    minlength="6"
+                    required>
                 </div>
-                <button class="submitBtn">Create Account</button>
-                </form>
-                <p>Already a raccoon? <a href="">Log in.</a></p>
+
+                <div class="col2">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" 
+                    name="lastName" 
+                    id="lastName"
+                    placeholder="Doe"
+                    required>
+
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" 
+                    name="phone" 
+                    id="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="000-000-0000"
+                    title="Please enter a valid phone number. Example 000-000-0000."
+                    required>
+
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" 
+                    name="confirmPassword" 
+                    id="confirmPassword"
+                    minlength="6"
+                    placeholder="Confirm Password"
+                    title="Passwords must match!"
+                    required>
+                </div> 
             </div>
+            <button class="submitBtn" type="submit">Create Account</button>
+            </form>
+
+
+            <p class="logIn">Already a raccoon? <a href="">Log in.</a></p>
         </div>
     </div>
+    <footer>
+        Copyright © 2022 | <a href="https://github.com/derpyfoop">Matthew E Ward.</a>
+    </footer>
 </body>
+<script src="script.js"></script>
 </html>
